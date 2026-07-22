@@ -60,13 +60,31 @@ export default function Portfolio() {
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                   className="group overflow-hidden rounded-3xl border border-ink-100 shadow-card transition-shadow duration-500 hover:shadow-card-lg"
                 >
-                  <div className="overflow-hidden">
+                  {/* <div className="overflow-hidden">
                     <ProjectVisual
                       industry={p.industry}
                       palette={p.palette}
                       className="h-64 w-full transition-transform duration-700 group-hover:scale-[1.03]"
                     />
+                  </div> */}
+
+                  <div className="overflow-hidden">
+                    {p.image ? (
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                      />
+                    ) : (
+                      <ProjectVisual
+                        industry={p.industry}
+                        palette={p.palette}
+                        className="h-64 w-full transition-transform duration-700 group-hover:scale-[1.03]"
+                      />
+                    )}
                   </div>
+
+
                   <div className="p-7 sm:p-8">
                     <div className="flex items-center justify-between">
                       <span className="eyebrow">{p.industry}</span>
@@ -107,9 +125,18 @@ export default function Portfolio() {
                           </span>
                         ))}
                       </div>
-                      <a
+                      {/* <a
                         href="#"
                         onClick={(e) => e.preventDefault()}
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700"
+                      >
+                        Visit project <ArrowUpRight size={15} />
+                      </a> */}
+
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700"
                       >
                         Visit project <ArrowUpRight size={15} />
