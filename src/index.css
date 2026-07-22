@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::selection {
+    background-color: #2563EB;
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2563EB;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-primary-600;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-600 hover:shadow-glow active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-200 bg-white px-7 py-3.5 text-sm font-semibold text-ink-900 transition-all duration-300 hover:border-primary-400 hover:text-primary-600 active:scale-[0.98];
+  }
+
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:border-white/40 hover:bg-white/10 active:scale-[0.98];
+  }
+
+  .section {
+    @apply py-24 sm:py-32;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-ink-100 bg-white shadow-card transition-all duration-500;
+  }
+}
+
+/* Ripple effect for buttons */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple span.ripple-el {
+  position: absolute;
+  border-radius: 9999px;
+  transform: scale(0);
+  animation: ripple-anim 600ms ease-out;
+  background: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+@keyframes ripple-anim {
+  to {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7D0E0;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9AA9C4;
+}

@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1C2540" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g opacity="0.08" stroke="#FFFFFF">
+    <path d="M0 100 H1200 M0 220 H1200 M0 340 H1200 M0 460 H1200 M0 580 H1200" />
+  </g>
+  <rect x="90" y="90" width="56" height="56" rx="14" fill="#2563EB" />
+  <path d="M112 122V106L134 122V106" stroke="white" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="140" cy="98" r="4" fill="#38BDF8" />
+  <text x="90" y="240" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="white">Northinge</text>
+  <text x="90" y="300" font-family="Arial, sans-serif" font-size="34" fill="#94A3B8">We build websites that grow businesses.</text>
+  <path d="M90 420 L230 400 L370 410 L510 350 L650 365 L790 300 L930 320 L1070 240" stroke="url(#line)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="1070" cy="240" r="8" fill="#38BDF8" />
+</svg>
