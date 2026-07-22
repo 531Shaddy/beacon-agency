@@ -29,8 +29,9 @@ export default function ProjectCard({ project, delay = 0 }) {
         </div>
 
         <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700"
         >
           Visit project <ArrowUpRight size={15} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

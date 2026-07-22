@@ -12,18 +12,20 @@ export const projects = [
     results: '+64% consultation requests in the first quarter, 2.1x average time on site.',
     tech: ['React', 'Tailwind CSS', 'Sanity CMS'],
     year: '2025',
+    url: 'https://harborlinelegal.netlify.app/'
   },
   {
-    slug: 'the-marlow-hotel',
-    name: 'The Marlow Hotel',
+    slug: 'Teestone',
+    name: 'Teestone Hotels and Apartments',
     industry: 'Hotel',
     palette: 'navy',
     description: 'A boutique hotel booking experience built to convert lookers into direct bookings.',
-    challenge: 'The Marlow relied almost entirely on OTA listings, losing 18% of booking value to commission fees.',
+    challenge: 'The Teestone relied almost entirely on OTA listings, losing 18% of booking value to commission fees.',
     solution: 'A visually immersive site with a fast, transparent direct-booking flow and dynamic rate comparison against OTAs.',
     results: 'Direct bookings up 41% year over year, OTA commission spend down $86k annually.',
     tech: ['React', 'Framer Motion', 'Stripe'],
     year: '2025',
+    url: 'https://teestone.netlify.app/'
   },
   {
     slug: 'olive-and-ash',
@@ -36,6 +38,7 @@ export const projects = [
     results: 'Online reservations up 58%, local search visibility more than doubled.',
     tech: ['React', 'Tailwind CSS', 'OpenTable API'],
     year: '2024',
+    url: 'https://oliveandash.netlify.app/'
   },
   {
     slug: 'clearview-health',
@@ -48,18 +51,20 @@ export const projects = [
     results: 'Online bookings up 73%, inbound call volume down 30%.',
     tech: ['React', 'React Router', 'Cal.com'],
     year: '2025',
+    url: 'https://clearviewhealthpartners.netlify.app/'
   },
   {
-    slug: 'forgeline-fitness',
-    name: 'Forgeline Fitness',
+    slug: 'bodyline-gym',
+    name: 'Bodyline Gym',
     industry: 'Gym',
     palette: 'orange',
     description: 'A high-energy gym website built to sell memberships before a visitor ever walks in the door.',
-    challenge: 'Forgeline had strong word-of-mouth but a site that undersold the facility and made trial sign-ups hard to find.',
+    challenge: 'Bodyline had strong word-of-mouth but a site that undersold the facility and made trial sign-ups hard to find.',
     solution: 'A bold, motion-driven design with a persistent trial-pass CTA and a transparent membership comparison table.',
     results: 'Trial sign-ups up 96%, membership conversion rate up 22%.',
     tech: ['React', 'Framer Motion', 'Lucide Icons'],
     year: '2024',
+    url: 'https://bodylinegymx.netlify.app/'
   },
   {
     slug: 'kindred-market',
@@ -72,6 +77,7 @@ export const projects = [
     results: 'Conversion rate up 3.4x, mobile checkout completion up 47%.',
     tech: ['React', 'Shopify Hydrogen', 'Tailwind CSS'],
     year: '2025',
+    url: 'https://kindredmarket.netlify.app/'
   },
   {
     slug: 'ridgeview-realty',
@@ -101,9 +107,9 @@ export const projects = [
 
 export const featuredSlugs = [
   'harborline-legal',
-  'the-marlow-hotel',
+  'Teestone',
   'olive-and-ash',
   'clearview-health',
-  'forgeline-fitness',
+  'bodyline-gym',
   'kindred-market',
 ]
