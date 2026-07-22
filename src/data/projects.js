@@ -1,11 +1,11 @@
-import harborlineImg from '../assets/projects/harborline.webp'
-import teestoneImg from '../assets/projects/teestone.webp'
-import oliveImg from '../assets/projects/oliveandash.webp'
-// import clearviewImg from '../assets/projects/clearview-health.webp'
-import bodylineImg from '../assets/projects/bodyline.webp'
-// import kindredImg from '../assets/projects/kindred-market.webp'
-// import ridgeviewImg from '../assets/projects/ridgeview-realty.webp'
-// import brightPathImg from '../assets/projects/bright-path-academy.webp'
+import harborlineImg from '../assets/projects/harborline.png'
+import teestoneImg from '../assets/projects/teestone.png'
+import oliveImg from '../assets/projects/oliveandash.png'
+// import clearviewImg from '../assets/projects/clearview-health.png'
+import bodylineImg from '../assets/projects/bodyline.png'
+// import kindredImg from '../assets/projects/kindred-market.png'
+// import ridgeviewImg from '../assets/projects/ridgeview-realty.png'
+// import brightPathImg from '../assets/projects/bright-path-academy.png'
 
 
 
