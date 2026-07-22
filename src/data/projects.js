@@ -1,3 +1,15 @@
+import harborlineImg from '../assets/projects/harborline.webp'
+import teestoneImg from '../assets/projects/teestone.webp'
+import oliveImg from '../assets/projects/oliveandash.webp'
+// import clearviewImg from '../assets/projects/clearview-health.webp'
+import bodylineImg from '../assets/projects/bodyline.webp'
+// import kindredImg from '../assets/projects/kindred-market.webp'
+// import ridgeviewImg from '../assets/projects/ridgeview-realty.webp'
+// import brightPathImg from '../assets/projects/bright-path-academy.webp'
+
+
+
+
 export const categories = ['All', 'Business', 'Hotel', 'Restaurant', 'Healthcare', 'Gym', 'E-commerce']
 
 export const projects = [
@@ -12,7 +24,8 @@ export const projects = [
     results: '+64% consultation requests in the first quarter, 2.1x average time on site.',
     tech: ['React', 'Tailwind CSS', 'Sanity CMS'],
     year: '2025',
-    url: 'https://harborlinelegal.netlify.app/'
+    url: 'https://harborlinelegal.netlify.app/',
+    image: harborlineImg
   },
   {
     slug: 'Teestone',
@@ -25,7 +38,8 @@ export const projects = [
     results: 'Direct bookings up 41% year over year, OTA commission spend down $86k annually.',
     tech: ['React', 'Framer Motion', 'Stripe'],
     year: '2025',
-    url: 'https://teestone.netlify.app/'
+    url: 'https://teestone.netlify.app/',
+    image: teestoneImg
   },
   {
     slug: 'olive-and-ash',
@@ -38,7 +52,8 @@ export const projects = [
     results: 'Online reservations up 58%, local search visibility more than doubled.',
     tech: ['React', 'Tailwind CSS', 'OpenTable API'],
     year: '2024',
-    url: 'https://oliveandash.netlify.app/'
+    url: 'https://oliveandash.netlify.app/',
+    image: oliveImg
   },
   {
     slug: 'clearview-health',
@@ -64,7 +79,8 @@ export const projects = [
     results: 'Trial sign-ups up 96%, membership conversion rate up 22%.',
     tech: ['React', 'Framer Motion', 'Lucide Icons'],
     year: '2024',
-    url: 'https://bodylinegymx.netlify.app/'
+    url: 'https://bodylinegymx.netlify.app/',
+    image: bodylineImg
   },
   {
     slug: 'kindred-market',

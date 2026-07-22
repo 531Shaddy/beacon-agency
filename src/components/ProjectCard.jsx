@@ -6,11 +6,24 @@ export default function ProjectCard({ project, delay = 0 }) {
   return (
     <FadeIn delay={delay} className="group card-surface overflow-hidden hover:-translate-y-1.5 hover:shadow-card-lg">
       <div className="overflow-hidden">
+        {/* <ProjectVisual
+          industry={project.industry}
+          palette={project.palette}
+          className="h-56 w-full transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        /> */}
+        {project.image ? (
+        <img
+          src={project.image}
+          alt={project.name}
+          className="h-56 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        />
+      ) : (
         <ProjectVisual
           industry={project.industry}
           palette={project.palette}
           className="h-56 w-full transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
+      )}
       </div>
       <div className="p-6">
         <div className="flex items-center justify-between">
