@@ -13,17 +13,49 @@ export default function Contact() {
 
   const handleChange = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }))
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const nextErrors = {}
+  //   if (!form.name.trim()) nextErrors.name = 'Please enter your name.'
+  //   if (!/^\S+@\S+\.\S+$/.test(form.email)) nextErrors.email = 'Please enter a valid email.'
+  //   if (!form.message.trim()) nextErrors.message = 'Tell us a little about your project.'
+  //   setErrors(nextErrors)
+  //   if (Object.keys(nextErrors).length === 0) {
+  //     setSubmitted(true)
+  //   }
+  // }
+
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const nextErrors = {}
-    if (!form.name.trim()) nextErrors.name = 'Please enter your name.'
-    if (!/^\S+@\S+\.\S+$/.test(form.email)) nextErrors.email = 'Please enter a valid email.'
-    if (!form.message.trim()) nextErrors.message = 'Tell us a little about your project.'
-    setErrors(nextErrors)
-    if (Object.keys(nextErrors).length === 0) {
-      setSubmitted(true)
-    }
+  e.preventDefault()
+
+  const nextErrors = {}
+
+  if (!form.name.trim()) nextErrors.name = 'Please enter your name.'
+  if (!/^\S+@\S+\.\S+$/.test(form.email))
+    nextErrors.email = 'Please enter a valid email.'
+  if (!form.message.trim())
+    nextErrors.message = 'Tell us a little about your project.'
+
+  setErrors(nextErrors)
+
+  if (Object.keys(nextErrors).length === 0) {
+    const subject = `Website Inquiry from ${form.name}`
+
+    const body = `
+Name: ${form.name}
+Email: ${form.email}
+Business: ${form.business}
+Budget: ${form.budget}
+
+Message:
+${form.message}
+`
+
+    window.location.href = `mailto:northinge.studio@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`
   }
+}
 
   return (
     <>
