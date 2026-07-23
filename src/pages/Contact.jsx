@@ -38,25 +38,25 @@ export default function Contact() {
           {/* Contact info */}
           <FadeIn>
             <div className="space-y-5">
-              <a href="mailto:hello@northinge.agency" className="flex items-center gap-4 rounded-2xl border border-ink-100 p-5 transition-colors hover:border-primary-200 hover:bg-primary-50/40">
+              <a href="mailto:northinge.studio@gmail.com" className="flex items-center gap-4 rounded-2xl border border-ink-100 p-5 transition-colors hover:border-primary-200 hover:bg-primary-50/40">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-600"><Mail size={20} /></span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-ink-400">Email</p>
-                  <p className="mt-0.5 text-sm font-medium text-ink-900">hello@northinge.agency</p>
+                  <p className="mt-0.5 text-sm font-medium text-ink-900">northinge.studio@gmail.com</p>
                 </div>
               </a>
-              <a href="tel:+14155550148" className="flex items-center gap-4 rounded-2xl border border-ink-100 p-5 transition-colors hover:border-primary-200 hover:bg-primary-50/40">
+              <a href="tel:+2349038091921" className="flex items-center gap-4 rounded-2xl border border-ink-100 p-5 transition-colors hover:border-primary-200 hover:bg-primary-50/40">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-600"><Phone size={20} /></span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-ink-400">Phone</p>
-                  <p className="mt-0.5 text-sm font-medium text-ink-900">(415) 555-0148</p>
+                  <p className="mt-0.5 text-sm font-medium text-ink-900">(+234) 903-809-1921</p>
                 </div>
               </a>
               <div className="flex items-center gap-4 rounded-2xl border border-ink-100 p-5">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-600"><MapPin size={20} /></span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-ink-400">Studio</p>
-                  <p className="mt-0.5 text-sm font-medium text-ink-900">548 Market Street, San Francisco, CA</p>
+                  <p className="mt-0.5 text-sm font-medium text-ink-900">Lagos</p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Contact() {
 
             {/* Map placeholder */}
             <div className="relative mt-8 h-64 overflow-hidden rounded-3xl border border-ink-100">
-              <svg viewBox="0 0 500 300" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+              {/* <svg viewBox="0 0 500 300" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
                 <rect width="500" height="300" fill="#EFF5FF" />
                 <g stroke="#C7D0E0" strokeWidth="1">
                   <path d="M0 60 H500 M0 130 H500 M0 200 H500 M0 260 H500" />
@@ -91,7 +91,8 @@ export default function Contact() {
               </div>
               <div className="absolute bottom-4 left-4 rounded-full bg-white px-3.5 py-2 text-xs font-medium text-ink-600 shadow-card">
                 548 Market Street, San Francisco
-              </div>
+              </div> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310738317!2d3.1191424822571263!3d6.548369371557793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1784770391555!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
           </FadeIn>
 
