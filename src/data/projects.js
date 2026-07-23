@@ -1,9 +1,9 @@
 import harborlineImg from '../assets/img/harborline.png'
 import teestoneImg from '../assets/img/teestone.png'
 import oliveImg from '../assets/img/oliveandash.png'
-// import clearviewImg from '../assets/projects/clearview-health.png'
+import clearviewImg from '../assets/projects/clearview-health.png'
 import bodylineImg from '../assets/img/bodyline.png'
-// import kindredImg from '../assets/projects/kindred-market.png'
+import kindredImg from '../assets/projects/kindred-market.png'
 // import ridgeviewImg from '../assets/projects/ridgeview-realty.png'
 // import brightPathImg from '../assets/projects/bright-path-academy.png'
 
@@ -66,7 +66,8 @@ export const projects = [
     results: 'Online bookings up 73%, inbound call volume down 30%.',
     tech: ['React', 'React Router', 'Cal.com'],
     year: '2025',
-    url: 'https://clearviewhealthpartners.netlify.app/'
+    url: 'https://clearviewhealthpartners.netlify.app/',
+    image: clearviewImg
   },
   {
     slug: 'bodyline-gym',
@@ -93,7 +94,8 @@ export const projects = [
     results: 'Conversion rate up 3.4x, mobile checkout completion up 47%.',
     tech: ['React', 'Shopify Hydrogen', 'Tailwind CSS'],
     year: '2025',
-    url: 'https://kindredmarket.netlify.app/'
+    url: 'https://kindredmarket.netlify.app/',
+    image: kindredImg
   },
   {
     slug: 'ridgeview-realty',
