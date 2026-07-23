@@ -75,8 +75,8 @@ export default function Contact() {
             </div>
 
             {/* Map placeholder */}
-            <div className="relative mt-8 h-64 overflow-hidden rounded-3xl border border-ink-100">
-              {/* <svg viewBox="0 0 500 300" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+            {/* <div className="relative mt-8 h-64 overflow-hidden rounded-3xl border border-ink-100">
+              <svg viewBox="0 0 500 300" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
                 <rect width="500" height="300" fill="#EFF5FF" />
                 <g stroke="#C7D0E0" strokeWidth="1">
                   <path d="M0 60 H500 M0 130 H500 M0 200 H500 M0 260 H500" />
@@ -91,9 +91,8 @@ export default function Contact() {
               </div>
               <div className="absolute bottom-4 left-4 rounded-full bg-white px-3.5 py-2 text-xs font-medium text-ink-600 shadow-card">
                 548 Market Street, San Francisco
-              </div> */}
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310738317!2d3.1191424822571263!3d6.548369371557793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1784770391555!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
+              </div>
+            </div> */}
           </FadeIn>
 
           {/* Form */}
@@ -134,7 +133,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange('email')}
                       className={`mt-2 w-full rounded-xl border px-4 py-3 text-sm text-ink-900 outline-none transition-colors focus:border-primary-500 ${errors.email ? 'border-red-300' : 'border-ink-200'}`}
-                      placeholder="jamie@business.com"
+                      placeholder="jamie@gmail.com"
                     />
                     {errors.email && <p className="mt-1.5 text-xs text-red-500">{errors.email}</p>}
                   </div>
