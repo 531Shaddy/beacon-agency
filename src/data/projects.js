@@ -1,9 +1,9 @@
 import harborlineImg from '../assets/img/harborline.png'
 import teestoneImg from '../assets/img/teestone.png'
 import oliveImg from '../assets/img/oliveandash.png'
-import clearviewImg from '../assets/img/clearview-health.png'
+import clearviewImg from '../assets/img/clearview.png'
 import bodylineImg from '../assets/img/bodyline.png'
-import kindredImg from '../assets/img/kindred-market.png'
+import kindredImg from '../assets/img/kindred.png'
 // import ridgeviewImg from '../assets/projects/ridgeview-realty.png'
 // import brightPathImg from '../assets/projects/bright-path-academy.png'
 
